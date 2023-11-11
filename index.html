@@ -16,9 +16,9 @@
             <section class="quadros-do-jogo" id="aviso">
                 <h2 class="atencao">Atenção</h2>
                 <p class="texto-atencao">
-                    Este jogo possuí qualidade duvidosa e não deve ser levado a sério, nem ser parâmetro para uma entrevista real, divirta-se e acesse o repositório do autor através do <a href="https://github.com/Marchon1702" target="_blank">Github🔗</a> </p>
+                    Este jogo possuí qualidade duvidosa e não deve ser levado a sério, nem ser parâmetro para uma entrevista real, recomendamos que sua tela possua largura igual ou superior a 700px, caso contrário o jogo poderá apresentar problemas, divirta-se e acesse o repositório do autor através do <a href="https://github.com/Marchon1702" target="_blank">Github🔗</a> </p>
                 <p class="texto-atencao">
-                    This game is of dubious quality and should not be taken seriously, nor should it be used as a parameter for a real interview. Have fun and visit the author's repository via the <a href="https://github.com/Marchon1702" target="_blank">Github🔗</a>
+                    This game is of dubious quality and should not be taken seriously, nor should it be used as a parameter for a real interview, we recommend that your screen has a width of 700px or more, otherwise the game may present problems. Have fun and visit the author's repository via the <a href="https://github.com/Marchon1702" target="_blank">Github🔗</a>
                 </p>
                 <div class="roda-pe">
                     <i id="next" class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -43,9 +43,49 @@
                         Você está em uma entrevista de emprego relacionada a área de programação, Jhonson Recruiter irá te avaliar com perguntas e testes de habilidades, pense bem em qual resposta será escolhida, pois cada uma delas tem um certo peso em relação a decisão final.
                     </p>
             </section>
+            <section id="escritorio-in-game" class="quadros do jogo">
+                <div id="div-jhonson">
+                    <img src="imagens/Jhonson.recuiter-serio.png" alt="recrutador-sério" class="jhonson" id="serio">
+                    <img src="imagens/Jhonson.recuiter-amistoso.png" alt="recrutador-amistoso" class="jhonson" id="amistoso">
+                    <img src="imagens/Jhonson.recuiter-irritado.png" alt="recrutador-irritado" class="jhonson" id="irritado">
+                </div>    
+                <div id="div-chat">
+                    <div id="J-talks">
+                        <p id="pergunta"></p>
+                    </div>
+                    <div id="Candi-Talks">
+                        <button id="r1" onclick="escolherpergunta(this)"></button>
+                        <button id="r2" onclick="escolherpergunta(this)"></button>
+                        <button id="r3" onclick="escolherpergunta(this)"></button>
+                        <button id="r4" onclick="escolherpergunta(this)"></button>
+                    </div>
+                    <h3 class="titulo-status">Status</h3>
+                    <div id="status">
+                        <div id="green"></div>
+                    </div>
+                </div>               
+            </section>
+            <section class="quadros-do-jogo" id="pontuacao-fase1">
+                <h2 id="pontuacao">Pontuação Final: 50</h2>
+                <img src="imagens/reprovado.png" alt="Nenhuma estrela" class="estrelas" id="star0">
+                <img src="imagens/1-estrela.png" alt="Uma estrela" class="estrelas" id="star1">
+                <img src="imagens/2-estrelas.png" alt="Duas estrelas" class="estrelas" id="star2">
+                <img src="imagens/3-estrelas.png" alt="Três estrelas" class="estrelas" id="star3">
+                <p id="txtfinal_fase1">Você foi selecionado para a próxima fase. Certifique-se de estar preparado para a fase técnica.</p>
+                <input type="button" value="Continuar" id="next-fase">
+            </section>           
         </section>
     </main>
-    <footer style="display: none;">
+    <section id="erro">
+            <p>Erro: É necessario que seu dispositivo tenha uma tela com largura igual ou superior a 700px!</p>
+            <br>
+            <i class="fa fa-rotate-left"></i>
+            <br>
+            <p>
+                Sugestão: Caso esteja no Smartphone, gire sua tela para aumentar a largura. 
+            </p>           
+    </section>
+    <footer>
         <h3>© All rights reserved to Matheus Marchon.</h3>
     </footer>
     <script src="https://kit.fontawesome.com/32d6f1e6b0.js" crossorigin="anonymous"></script>
