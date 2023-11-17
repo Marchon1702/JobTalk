@@ -326,7 +326,7 @@ img#irritado {
 }
 
 #pontuacao-fase1 > #next-fase {
-    display: block;
+    display: none;
     margin: auto;
     padding: 10px;
     width: 20%;
